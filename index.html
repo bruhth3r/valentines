@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css">
 
+    <!-- Link to your JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <div>
+            <h1 class="header_text">hii Ivann How are you feeling?</h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2dqeWd0ZTAwbWJqaDhsb3dtbHNod2I1cWFybnl4NTBtYXNhbDdjZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kZqbBT64ECtjy/giphy.gif" 
+                 alt="Cute animated GIF">
+        </div>
+
+        <!-- Buttons Section -->
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="showYesMessage()">Good</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="showNoMessage()">Bad</button>
+        </div>
+
+        <!-- Hidden Message Section -->
+        <div id="messageContainer" style="display: none; text-align: center;">
+            <h1 id="messageText" class="header_text"></h1>
+            <div class="gif_container">
+                <img id="messageGif" src="" alt="Result GIF">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
